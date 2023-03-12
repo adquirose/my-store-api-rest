@@ -3,7 +3,7 @@ const cors = require('cors')
 const routerApi = require('./routes')
 const { logErrors, errorHandler, boomErrorHandler } = require('./middleware/error.handler')
 const app = express();
-// const port = 3005;
+const port = 3005;
 const whitelist = [
   'http://localhost:8080/',
   'https://206.62.252.185'
@@ -27,6 +27,6 @@ app.use(logErrors)
 app.use(boomErrorHandler)
 app.use(errorHandler)
 
-// app.listen(port, () => {
-//   console.log(`mi port ${port}`)
-// })
+app.listen(port, () => {
+  console.log(`mi port ${port}`)
+})
