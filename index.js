@@ -6,7 +6,7 @@ const app = express();
 // const port = 3005;
 const whitelist = [
   'http://localhost:8080/',
-  'https://myapp.com'
+  'https://206.62.252.185'
 ]
 const options = {
   origin: (origin, callback) => {
