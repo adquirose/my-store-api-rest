@@ -11,7 +11,7 @@ docker-compose ps -a
 docker-compose down <NOMBRE_SERVICIO>
 
 *conectar al contenedor desde la terminal:
-docker-compose exec postgres
+docker-compose exec postgres bash
 
 *ya en el contenedor, conectar a la db:
 psql -h localhost -d <DDBB_NAME> -U <USER_NAME>
