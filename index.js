@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const routerApi = require('./routes')
-const { logErrors, errorHandler, boomErrorHandler, ormErrorHandler } = require('./middleware/error.handler')
+const routerApi = require('./routes');
+const { logErrors, errorHandler, boomErrorHandler, ormErrorHandler } = require('./middleware/error.handler');
 const app = express();
 const port = 3005;
 const whitelist = [
