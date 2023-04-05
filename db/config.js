@@ -7,10 +7,13 @@ module.exports = {
   },
   production:{
     url:config.dbUrl,
-    dialect: 'postgres',
-    ssl:{
-      rejectUnauthorized:false
+    dialect:'postgres',
+    dialectOptions:{
+      ssl:{
+        rejectUnauthorized:false
+      }
     }
+
   }
 
 }
